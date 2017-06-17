@@ -16,5 +16,5 @@ Jeśli chcesz pomóc w tworzeniu tłumaczeń stwórz pull requesta
 lub napisz na adres: kontakt@taniochowo.pl - chętnie pomogę jeśli nie wiesz jak to zrobić.
 
 ## Licencja
-Wszystkie tłumaczenia dostępne są na licencji GNU GLPv3(https://github.com/taniotanio7/Tlumaczenia-pluginow/blob/master/LICENSE), chyba że oznaczono inaczej.
+Wszystkie tłumaczenia dostępne są na licencji [GNU GLPv3](https://github.com/taniotanio7/Tlumaczenia-pluginow/blob/master/LICENSE), chyba że zaznaczono inaczej.
 
