@@ -1,4 +1,4 @@
-# Tlumaczenia-pluginow
+# Tłumaczenia pluginów
 Zbiór polskich tłumaczeń pluginów do gry Minecraft dla silników Bukkit oraz Spigot.
 
 ## Parę wyjaśnień
@@ -16,5 +16,5 @@ Jeśli chcesz pomóc w tworzeniu tłumaczeń stwórz pull requesta
 lub napisz na adres: kontakt@taniochowo.pl - chętnie pomogę jeśli nie wiesz jak to zrobić.
 
 ## Licencja
-Wszystkie tłumaczenia dostępne są na licencji GNU GLPv3(https://choosealicense.com/licenses/gpl-3.0/), chyba że oznaczono inaczej.
+Wszystkie tłumaczenia dostępne są na licencji GNU GLPv3(https://github.com/taniotanio7/Tlumaczenia-pluginow/blob/master/LICENSE), chyba że oznaczono inaczej.
 
