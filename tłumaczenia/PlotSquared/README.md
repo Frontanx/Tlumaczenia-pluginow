@@ -3,6 +3,7 @@
 ## Informacje
 
 Ukończone: 90%
+
 Brakuje tłumaczeń niektórych komend przeznaczonych głównie dla administratorów. Wszystkie komendy dla graczy są przetłumaczone.
 
 ## Uwaga
