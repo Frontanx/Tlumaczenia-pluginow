@@ -1,0 +1,616 @@
+plot:
+  aliases:
+  - plot
+  - plots
+  - p
+  - plotsquared
+  - plot2
+  - p2
+  - ps
+  - plotme
+  - plotz
+  - ap
+  - dzialki
+  usage: ''
+  description: ''
+  confirmation: false
+buy:
+  aliases:
+  - buy
+  - kup
+  usage: /dzialki kup
+  description: Kup działkę, na której stoisz
+  confirmation: true
+save:
+  aliases:
+  - save
+  - backup
+  - zapisz
+  usage: /dzialki zapisz
+  description: Zapisz swoją działkę
+  confirmation: false
+load:
+  aliases:
+  - load
+  - restore
+  - laduj
+  usage: /dzialki laduj
+  description: Załaduj swoją działkę
+  confirmation: false
+confirm:
+  aliases:
+  - confirm
+  - ok
+  - potwierdz
+  usage: /dzialki ok
+  description: Potwierdzaj akcje
+  confirmation: false
+template:
+  aliases:
+  - template
+  - szablon
+  usage: /dzialki szablon [import|export] <świat> <szablon>
+  description: Stwórz lub użyj szablonu świata
+  confirmation: false
+download:
+  aliases:
+  - download
+  - dl
+  - pobierz
+  usage: /dzialki pobierz [schematic|bo3|world]
+  description: Pobiera twoją działkę
+  confirmation: false
+update:
+  aliases:
+  - update
+  - updateplugin
+  - aktualizacja
+  usage: /dzialki aktualizacja
+  description: Wykonaj aktualizację pluginu
+  confirmation: true
+setup:
+  aliases:
+  - setup
+  - create
+  usage: /dzialki setup
+  description: Kreator konfiguracji nowego świata z działkami
+  confirmation: false
+area:
+  aliases:
+  - area
+  - world
+  - obszar
+  usage: /dzialki obszar <create|info|list|tp|regen>
+  description: Tworzy nowy obszar z działkami
+  confirmation: true
+debugsavetest:
+  aliases:
+  - debugsavetest
+  usage: /dzialki debugsavetest
+  description: This command will force the recreation of all plots in the DB
+  confirmation: false
+debugloadtest:
+  aliases:
+  - debugloadtest
+  usage: /dzialki debugloadtest
+  description: This debug command will force the reload of all plots in the DB
+  confirmation: false
+createroadschematic:
+  aliases:
+  - createroadschematic
+  - crs
+  usage: /dzialki createroadschematic
+  description: Add a road schematic to your world using the roads around your current
+    plot
+  confirmation: false
+debugallowunsafe:
+  aliases:
+  - debugallowunsafe
+  usage: /dzialki debugallowunsafe
+  description: Allow unsafe actions until toggled off
+  confirmation: false
+regenallroads:
+  aliases:
+  - regenallroads
+  - rgar
+  - regeneracjadrog
+  usage: /dzialki regeneracjadrog <świat> [wysokość]
+  description: Regeneruje wszystkie drogi na mapie używając podenego schematu
+  confirmation: false
+claim:
+  aliases:
+  - claim
+  - zajmij
+  usage: /dzialki zajmij
+  description: Zajmuje działkę, na której stoisz
+  confirmation: false
+auto:
+  aliases:
+  - auto
+  - a
+  usage: /dzialki auto [length,width]
+  description: Zajmuje najbliższą działkę
+  confirmation: false
+visit:
+  aliases:
+  - visit
+  - v
+  - tp
+  - teleport
+  - goto
+  - home
+  - h
+  - odwiedz
+  usage: /dzialki odwiedz [<gracz>|<alias>|<świat>|<id>] [#]
+  description: Odwiedza czyjąś działkę
+  confirmation: false
+set:
+  aliases:
+  - set
+  - s
+  - ustaw
+  - u
+  usage: /dzialki ustaw <biome|alias|home|flag> <value...>
+  description: Ustawia wartość w ustawieniach działki
+  confirmation: false
+clear:
+  aliases:
+  - clear
+  - reset
+  - czysc
+  usage: /dzialki reset
+  description: Czyści wszystko co znajduje się na twojej działce
+  confirmation: true
+delete:
+  aliases:
+  - delete
+  - del
+  - usun
+  usage: /dzialki usun
+  description: Usuwa twoją działkę i pozwala by zajął ją ktoś inny
+  confirmation: true
+trust:
+  aliases:
+  - trust
+  - t
+  - ufaj
+  usage: /dzialki ufaj <gracz>
+  description: Pozwala osobie na budowanie na twojej działce
+  confirmation: false
+add:
+  aliases:
+  - add
+  - dodaj
+  usage: /dzialki dodaj <gracz>
+  description: Pozwala osobie budować na działce, tylko kiedy jesteś w grze
+  confirmation: false
+deny:
+  aliases:
+  - deny
+  - d
+  - zablokuj
+  usage: /dzialki zablokuj <gracz>
+  description: Zabrania osobie wchodzić na działkę
+  confirmation: false
+remove:
+  aliases:
+  - remove
+  - r
+  - untrust
+  - ut
+  - undeny
+  - wypisz
+  usage: /dzialki wypisz <gracz>
+  description: Wypisuje podaną osobę z listy (zablokowana, zaufana, dodana)
+  confirmation: false
+info:
+  aliases:
+  - info
+  - i
+  usage: /dzialki info <id>
+  description: Wyświetla informacje o działce
+  confirmation: false
+near:
+  aliases:
+  - near
+  - n
+  - sasiedzi
+  usage: /dzialki sasiedzi
+  description: Wyświetla graczy w pobliżu
+  confirmation: false
+list:
+  aliases:
+  - list
+  - l
+  - find
+  - search
+  - lista
+  usage: /dzialki lista <forsale|mine|shared|world|top|all|unowned|unknown|player|world|done|fuzzy
+    <search...>> [#]
+  description: Lista wszystkich działek
+  confirmation: false
+debug:
+  aliases:
+  - debug
+  usage: /dzialki debug [msg]
+  description: Show debug information
+  confirmation: false
+schematic:
+  aliases:
+  - schematic
+  - sch
+  - schemat
+  usage: /dzialki schemat <arg...>
+  description: Komenda dla schematów
+  confirmation: false
+plugin:
+  aliases:
+  - plugin
+  - version
+  usage: ''
+  description: Wyświetla informacje o wersji pluginu
+  confirmation: false
+purge:
+  aliases:
+  - purge
+  usage: /dzialki purge world:<świat> area:<area> id:<id> owner:<owner> shared:<shared>
+    unknown:[true|false]
+  description: Purge all plots for a world
+  confirmation: true
+reload:
+  aliases:
+  - reload
+  usage: /dzialki reload
+  description: Przeładowuje konfigurację
+  confirmation: false
+relight:
+  aliases:
+  - relight
+  - swiatlo
+  usage: /dzialki swiatlo
+  description: Naprawia światło na twojej działce
+  confirmation: false
+merge:
+  aliases:
+  - merge
+  - m
+  - polacz
+  usage: /dzialki polacz <all|n|e|s|w> [removeroads]
+  description: Połącz działkę, na której stoisz z inną sąsiadującą działką
+  confirmation: true
+debugpaste:
+  aliases:
+  - debugpaste
+  - dp
+  usage: /dzialki debugpaste
+  description: Upload settings.yml, worlds.yml, commands.yml and latest.log to www.hastebin.com
+  confirmation: false
+unlink:
+  aliases:
+  - unlink
+  - u
+  - unmerge
+  - rozlacz
+  usage: /dzialki rozlacz
+  description: Rozłącza połączone ze sobą działki
+  confirmation: true
+kick:
+  aliases:
+  - kick
+  - k
+  - wyrzuc
+  usage: /dzialki wyrzuc
+  description: Wyrzuca gracza z twojej działki
+  confirmation: false
+rate:
+  aliases:
+  - rate
+  - rt
+  - ocen
+  usage: /dzialki ocen [#|next|purge]
+  description: Oceń działkę
+  confirmation: false
+debugclaimtest:
+  aliases:
+  - debugclaimtest
+  usage: ''
+  description: If you accidentally delete your database, this command will attempt
+    to restore all plots based on the data from plot signs. Execution time may vary
+  confirmation: false
+inbox:
+  aliases:
+  - inbox
+  - poczta
+  - oceny
+  usage: /dzialki oceny [inbox] [delete <index>|clear|page]
+  description: Przeglądaj oceny i komentarze dla twojej działki
+  confirmation: false
+comment:
+  aliases:
+  - comment
+  - msg
+  - komentuj
+  - kom
+  usage: /dzialki kom <wiadomość>
+  description: Pozostaw komentarz na temat działki
+  confirmation: false
+database:
+  aliases:
+  - database
+  - convert
+  usage: /dzialki database [area] <sqlite|mysql|import>
+  description: Convert/Backup Storage
+  confirmation: false
+swap:
+  aliases:
+  - swap
+  - switch
+  - zamiana
+  usage: /dzialki zamiana <X;Z>
+  description: Zamień się działkami
+  confirmation: false
+music:
+  aliases:
+  - music
+  - muzyka
+  usage: /dzialki muzyka
+  description: Ustawia muzykę na twojej działce
+  confirmation: false
+debugroadregen:
+  aliases:
+  - debugroadregen
+  usage: /dzialki debugroadregen
+  description: Regenerate all roads based on the road schematic
+  confirmation: false
+debugexec:
+  aliases:
+  - debugexec
+  - exec
+  - $
+  usage: ''
+  description: Mutli-purpose debug command
+  confirmation: false
+setflag:
+  aliases:
+  - setflag
+  - f
+  - flag
+  - setf
+  - setflag
+  usage: /dzialki f <set|remove|add|list|info> <flaga> <wartość>
+  description: Ustaw flagę działki
+  confirmation: false
+target:
+  aliases:
+  - target
+  - cel
+  usage: /dzialki cel <<plot>|nearest>
+  description: Ustawia cel twojego kompasu na wybranej działce
+  confirmation: false
+debugfixflags:
+  aliases:
+  - debugfixflags
+  usage: /dzialki debugfixflags <świat>
+  description: Attempt to fix all flags for a world
+  confirmation: false
+move:
+  aliases:
+  - move
+  - debugmove
+  - przesun
+  usage: /dzialki przesun <X;Z>
+  description: Przesuwa działkę
+  confirmation: false
+condense:
+  aliases:
+  - condense
+  - kondensuj
+  usage: ''
+  description: Skondensuj świat z działkami
+  confirmation: false
+copy:
+  aliases:
+  - copy
+  - copypaste
+  - kopiuj
+  usage: /dzialki kopiuj <X;Z>
+  description: Kopiuje działkę
+  confirmation: false
+chat:
+  aliases:
+  - chat
+  - czat
+  usage: /dzialki czat [on|off]
+  description: Włącz lub wyłącz czat na działce
+  confirmation: false
+trim:
+  aliases:
+  - trim
+  usage: /dzialki trim <świat> [regenerate]
+  description: Delete unmodified portions of your plotworld
+  confirmation: false
+done:
+  aliases:
+  - done
+  - submit
+  - gotowa
+  usage: /dzialki gotowa
+  description: Oznacza twoją działkę jako ukończoną i gotową do oceny
+  confirmation: false
+continue:
+  aliases:
+  - continue
+  - kontynuacja
+  usage: /dzialki kontynuacja
+  description: kontynuacja prac nad działką po oznaczeniu jej jako gotową
+  confirmation: false
+bo3:
+  aliases:
+  - bo3
+  - bo2
+  usage: ''
+  description: Oznacz działkę jako ukończoną
+  confirmation: false
+middle:
+  aliases:
+  - middle
+  - center
+  - centre
+  - srodek
+  usage: /dzialki srodek
+  description: Teleportuje cię na środek działki
+  confirmation: false
+grant:
+  aliases:
+  - grant
+  - przyznaj
+  usage: /dzialki grant <check|add> [gracz]
+  description: 'Przyznaje środki graczu'
+  confirmation: false
+setowner:
+  aliases:
+  - setowner
+  - owner
+  - so
+  - seto
+  - nowywlasciciel
+  usage: /dzialki nowywlasciciel <gracz>
+  description: Ustawia właściciela działki
+  confirmation: true
+setdescription:
+  aliases:
+  - setdescription
+  - desc
+  - setdesc
+  - setd
+  - description
+  - opis
+  usage: /dzialki opis <opis>
+  description: Zmienia opis swojej działki
+  confirmation: false
+setbiome:
+  aliases:
+  - setbiome
+  - biome
+  - sb
+  - setb
+  - biom
+  - b
+  usage: /dzialki biom [biom]
+  description: Ustawia biom działki
+  confirmation: false
+setalias:
+  aliases:
+  - setalias
+  - alias
+  - sa
+  - name
+  - rename
+  - setname
+  - seta
+  - nameplot
+  - nazwa
+  usage: /dzialki alias <alias>
+  description: Zmienia alias działki
+  confirmation: false
+sethome:
+  aliases:
+  - sethome
+  - sh
+  - seth
+  - ustawdom
+  usage: /dzialki ustawdom [none]
+  description: Ustawia działkę jako dom
+  confirmation: false
+cluster:
+  aliases:
+  - cluster
+  - clusters
+  usage: ''
+  description: Manage a plot cluster
+  confirmation: false
+debugimportworlds:
+  aliases:
+  - debugimportworlds
+  usage: ''
+  description: Import worlds by player name
+  confirmation: false
+toggle:
+  aliases:
+  - toggle
+  - attribute
+  - ustaw
+  usage: ''
+  description: Przełącz ustawienia gracza
+  confirmation: false
+  worldedit:
+    aliases:
+    - worldedit
+    - we
+    - wea
+    usage: ''
+    description: Włącz lub wyłącza restrykcje obszarów edycji w WorldEdicie
+    confirmation: false
+  titles:
+    aliases:
+    - titles
+    - tytul
+    usage: ''
+    description: Włącz lub wyłącz wyświetlanie informacji o działce w posiaci tytułów
+    confirmation: false
+  chatspy:
+    aliases:
+    - chatspy
+    - spy
+    usage: ''
+    description: Włącz lub wyłącz podsłuchiwanie czatu
+    confirmation: false
+  clear-confirmation:
+    aliases:
+    - clear-confirmation
+    usage: ''
+    description: Włącz potiwerdzenie automatycznego czyszczenia
+    confirmation: false
+  chat:
+    aliases:
+    - chat
+    - czat
+    usage: '/dzialki czat'
+    description: Włącz lub wyłącz czat działki
+    confirmation: false
+help:
+  aliases:
+  - help
+  - he
+  - '?'
+  - pomoc
+  usage: pomoc [kategoria | nr]
+  description: Pokazuje menu pomocy
+  confirmation: false
+uuidconvert:
+  aliases:
+  - uuidconvert
+  usage: /dzialki uuidconvert <lower|offline|online>
+  description: Debug UUID conversion
+  confirmation: false
+weanywhere:
+  aliases:
+  - weanywhere
+  - wea
+  usage: /dzialki weanywhere
+  description: Force bypass of WorldEdit
+  confirmation: false
+trimchunks:
+  aliases:
+  - trimchunks
+  usage: /dzialki trimchunks <świat> <boolean-delete-unowned>
+  description: Delete unmodified portions of your plotworld
+  confirmation: false
+generatebiome:
+  aliases:
+  - generatebiome
+  - bg
+  - gb
+  usage: /dzialkis generatebiome <biome>
+  description: Generate a biome in your plot
+  confirmation: false
