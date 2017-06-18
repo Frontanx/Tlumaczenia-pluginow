@@ -8,6 +8,7 @@ Tłumaczenia całych pluginów (z integracją w kod) znajdują się w osobnych r
 # Lista tłumaczeń
 
 * Population Density - https://github.com/taniotanio7/PopulationDensity-pl
+* PlotSquared - https://github.com/taniotanio7/Tlumaczenia-pluginow/tree/master/tłumaczenia/PlotSquared
 
 ## Twórcy
 Lista wszystkich twórców tłumaczeń znajduje się w zakładce contributors
