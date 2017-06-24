@@ -1,6 +1,8 @@
 # Tłumaczenia pluginów
 Zbiór polskich tłumaczeń pluginów do gry Minecraft dla silników Bukkit oraz Spigot.
 
+[![ghit.me](https://ghit.me/badge.svg?repo=taniotanio7/Tlumaczenia-pluginow)](https://ghit.me/repo/taniotanio7/Tlumaczenia-pluginow)
+
 ## Parę wyjaśnień
 Tłumaczenia pojedynczych plików dla pluginów (zazwyczaj w formacie .yml) znajdują się w **osobnych folderach** w tym repozytorium.
 Tłumaczenia całych pluginów (z integracją w kod) znajdują się w osobnych repozytoriach, a ich listę można znaleść poniżej.
