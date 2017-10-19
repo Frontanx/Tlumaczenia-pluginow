@@ -1,6 +1,8 @@
 # Tłumaczenia pluginów
 Zbiór polskich tłumaczeń pluginów do gry Minecraft dla silników Bukkit oraz Spigot.
 
+*Projekt nie jest już nadal rozwijany.*
+
 [![ghit.me](https://ghit.me/badge.svg?repo=taniotanio7/Tlumaczenia-pluginow)](https://ghit.me/repo/taniotanio7/Tlumaczenia-pluginow)
 
 ## Parę wyjaśnień
